@@ -17,7 +17,7 @@ export default function Home() {
            </button>
            <p className={`mt-3 font-semibold ml-2 ${on ? "" : "text-[#ffffffe2]"}`}>dark</p>
         </div>
-        <Info title={on}/>
+        <Info title={on} bg={on}/>
         <About textColor={on}/>
         <Interest textColor={on}/>
         <Footer light ={on}/>
