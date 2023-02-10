@@ -1,4 +1,4 @@
-export default function Info(){
+export default function Info(props){
   return(
     <div>
         <div className="flex justify-center">
@@ -7,10 +7,10 @@ export default function Info(){
         <div>
           <div className="flex flex-col gap-[6.81px]">
             <div className="flex flex-col gap-[4.19px]">
-              <h2 className="text-white text-[25px] text-center font-[700]">Laura Smith</h2>
+              <h2 className={`text-white text-[25px] text-center font-[700] ${props.title ?"text-[#DCDCDC]": "text-[#161619]"}`}>Laura Smith</h2>
               <h3 className="text-[#f3bf99] text-[12.8px] text-center">Frontend Developer</h3>
             </div>
-            <h4 className="text-[10.24px] text-center text-white">laurasmith.website</h4>
+            <h4 className={`text-[10.24px] text-center text-white ${props.title ?"text-[#DCDCDC]": "text-[#161619]"}`}>laurasmith.website</h4>
           </div>
         </div>
         <div className="flex justify-center gap-[17px] mt-[15px] mb-[33px]">

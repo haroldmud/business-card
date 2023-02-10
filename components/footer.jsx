@@ -1,6 +1,6 @@
-export default function Footer(){
+export default function Footer(props){
   return(
-    <div className="flex justify-center gap-[24px] bg-[#161619] pt-[19px] pb-[20px]">
+    <div className={`flex justify-center gap-[24px] ${props.light ? "bg-[#161619]":"bg-[#ffff]"  }  pt-[19px] pb-[20px]`}>
       <img className="w-[25px]" src="/icons/twitter.png" alt="" />
       <img className="w-[25px]" src="/icons/fb.png" alt="" />
       <img className="w-[25px]" src="/icons/insta.png" alt="" />
